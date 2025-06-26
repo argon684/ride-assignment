@@ -1,0 +1,45 @@
+Exclude from Curb-to-Curb,Exclude Door-to-Door Ambulatory Only,Exclude Door-to-Door Wheelchair Only,Exclude Door-to-Door Wheelchair and Ambulatory,Exclude Wheelchair Lift
+Blind,No Uber,No Uber,No Uber,No Uber
+VI,Emergency Contact,Emergency Contact,Emergency Contact,Emergency Contact
+Visually Impaired,No Taxi,No Taxi,No Taxi,No Taxi
+Go to Door,LARGE LIFT VAN,LARGE LIFT VAN,LARGE LIFT VAN,SEDANS ONLY
+Door-to-Door,Lift Van,Lift Van,Lift Van,MACS CARS
+DTD,Rollator,SEDANS ONLY,SEDANS ONLY,NO VANS
+D2D,MACS CARS,MACS CARS,MACS CARS,METRO ACCESS VEHICLES ONLY
+No Uber,LFT,NO VANS,NO VANS,metro access
+Dad,METRO ACCESS VEHICLES ONLY,LFT,LFT,No Ubers
+Mom,metro access,METRO ACCESS VEHICLES ONLY,METRO ACCESS VEHICLES ONLY,No Ubr
+Sister,Van w/lift,metro access,metro access,REQUEST MACS W/LIFT
+Brother,van/lift,Van w/lift,Van w/lift,MACS VANS ONLY WITH LIFT
+Friend,No Ubers,van/lift,van/lift,
+Emergency Contact,No Ubr,No Ubers,No Ubers,
+No Taxi,REQUEST MACS W/LIFT,No Ubr,No Ubr,
+LARGE LIFT VAN,bus with a lift,REQUEST MACS W/LIFT,REQUEST MACS W/LIFT,
+Lift Van,VANS WITH LIFT ONLY,bus with a lift,bus with a lift,
+Rollator,ACCESS VAN/LIFT,VANS WITH LIFT ONLY,VANS WITH LIFT ONLY,
+MACS CARS,WILL NEED A LIFT VEHICLE,ACCESS VAN/LIFT,ACCESS VAN/LIFT,
+ring doorbell,requires a vehicle with a lift,WILL NEED A LIFT VEHICLE,WILL NEED A LIFT VEHICLE,
+LFT,MACS VANS ONLY WITH LIFT,requires a vehicle with a lift,requires a vehicle with a lift,
+Blind Go to Door,need a van with the lift,MACS VANS ONLY WITH LIFT,MACS VANS ONLY WITH LIFT,
+METRO ACCESS VEHICLES ONLY,SEND A LIFT VAN ONLY,need a van with the lift,need a van with the lift,
+VISUAL IMPAIRMENT,VAN W/ LIFT,SEND A LIFT VAN ONLY,SEND A LIFT VAN ONLY,
+metro access,VAN WIT LFT ONLY,VAN W/ LIFT,VAN W/ LIFT,
+Door to Door,,VAN WIT LFT ONLY,VAN WIT LFT ONLY,
+Van w/lift,,,,
+van/lift,,,,
+No Ubers,,,,
+No Ubr,,,,
+REQUEST MACS W/LIFT,,,,
+bus with a lift,,,,
+VANS WITH LIFT ONLY,,,,
+ACCESS VAN/LIFT,,,,
+WILL NEED A LIFT VEHICLE,,,,
+requires a vehicle with a lift,,,,
+MACS VANS ONLY WITH LIFT,,,,
+need a van with the lift,,,,
+SEND A LIFT VAN ONLY,,,,
+VAN W/ LIFT,,,,
+VAN WIT LFT ONLY,,,,
+IONA,,,,
+no cab,,,,
+"F/E , NO CAB ",,,,
