@@ -184,7 +184,12 @@ def filter_rides(df, company, hour_time, ride_count, assigned_ids,
         return any(keyword in comment for keyword in excluded_aid_needs)
 
     df = df[~df["pick-up comment"].fillna("").apply(has_disqualifying_aid)]
-    df = df[~df["drop-off comments"].fillna("").apply(has_disqualifying_aid)]
+
+
+    if "drop-off comments" in df.columns:
+        df = df[~df["drop-off comments"].fillna("").apply(has_disqualifying_aid)]
+    else:
+        print("Warning: 'drop-off comments' column not found, skipping drop-off comment filter.")
     print(f"Step 7: After aid exclusion filter: {df.shape}")
 
     ride_keywords = comment_exclusions.get(allowed_type.lower(), set())
@@ -196,7 +201,11 @@ def filter_rides(df, company, hour_time, ride_count, assigned_ids,
         return any(phrase in comment for phrase in ride_keywords)
 
     df = df[~df["pick-up comment"].fillna("").apply(has_excluded_phrase)]
-    df = df[~df["drop-off comments"].fillna("").apply(has_excluded_phrase)]
+
+    if "drop-off comments" in df.columns:
+        df = df[~df["drop-off comments"].fillna("").apply(has_excluded_phrase)]
+    else:
+        print("Warning: 'drop-off comments' column not found, skipping drop-off comment filter.")
     print(f"Step 8: After ride-type comment exclusion filter: {df.shape}")
 
     def is_allowed_city(row):
