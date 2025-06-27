@@ -61,6 +61,10 @@ def load_and_preprocess_rides(filepath):
     df = pd.read_csv(filepath, encoding='latin1')
     df.columns = df.columns.str.lower().str.strip()
 
+    # Now you can safely access 'drop_off_comments'
+    if "drop_off_comments" not in df.columns:
+        df["drop_off_comments"] = ""
+
     if "distance" not in df.columns:
         for col in df.columns:
             if "distance" in col:
