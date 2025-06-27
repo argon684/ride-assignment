@@ -183,7 +183,10 @@ def filter_rides(df, company, hour_time, ride_count, assigned_ids,
         comment = str(comment).lower()
         return any(keyword in comment for keyword in excluded_aid_needs)
 
-    df = df[~df["pick-up comment"].fillna("").apply(has_disqualifying_aid)]
+    if "pick-up comment" in df.columns:
+        df = df[~df["pick-up comment"].fillna("").apply(has_disqualifying_aid)]
+    else:
+        print("Warning: 'pick-up comment' column not found, skipping pick-up comment filter.")
 
 
     if "drop-off comments" in df.columns:
@@ -200,7 +203,10 @@ def filter_rides(df, company, hour_time, ride_count, assigned_ids,
         comment = comment.lower()
         return any(phrase in comment for phrase in ride_keywords)
 
-    df = df[~df["pick-up comment"].fillna("").apply(has_excluded_phrase)]
+    if "pick-up comment" in df.columns:
+        df = df[~df["pick-up comment"].fillna("").apply(has_excluded_phrase)]
+    else:
+        print("Warning: 'pick-up comment' column not found, skipping pick-up comment filter.")
 
     if "drop-off comments" in df.columns:
         df = df[~df["drop-off comments"].fillna("").apply(has_excluded_phrase)]
